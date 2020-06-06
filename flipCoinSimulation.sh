@@ -25,3 +25,19 @@ done
 
 echo "Count of head: $countHeads"
 echo "Count of tail: $countTails"
+
+echo ""
+
+if [ $countHeads -gt $countTails ];then
+ echo "WINNER IS HEAD"
+ echo "Count of head: $countHeads"
+elif [ $countTails -gt $countHeads ];then
+ echo "WINNER IS TAIL"
+ echo "Count of tail: $countTails"
+else
+ echo "IT'S A TIE"
+ echo "Count of head: $countHeads"
+ echo "Count of tail: $countTails"
+fi
+
+
